@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Roshani Sonawane</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(45deg, #f4f6fc, #d1e7f0);
+      color: #333;
+      animation: gradientAnimation 12s ease infinite;
+      transition: background 2s ease-in-out;
+    }
+
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: 30px auto;
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 25px rgba(106, 13, 173, 0.1);
+      opacity: 0;
+      animation: fadeIn 1.5s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    h1, h2 {
+      color: #6a0dad;
+      text-align: center;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      animation: slideIn 1s ease-out;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      border-bottom: 4px solid #6a0dad;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    .details {
+      background: #e8eafc;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      animation: slideInLeft 1.2s ease-out;
+    }
+
+    @keyframes slideInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .details p {
+      margin: 10px 0;
+      font-size: 1.1em;
+      color: #555;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #00bcd4;
+    }
+
+    .skills, .projects {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .skill-item {
+      text-align: center;
+      width: 100px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .skill-item img {
+      width: 70px;
+      height: 70px;
+      margin-bottom: 10px;
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
+      transition: transform 0.3s ease;
+    }
+
+    .skill-item img:hover {
+      transform: scale(1.2);
+      box-shadow: 0 0 20px rgba(0, 188, 212, 0.5);
+    }
+
+    .projects .project-card {
+      background: #e8eafc;
+      padding: 15px;
+      margin: 15px auto;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 600px;
+      box-shadow: 0px 3px 12px rgba(0, 188, 212, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      opacity: 0;
+      animation: fadeInUpCard 1s ease-out forwards;
+    }
+
+    @keyframes fadeInUpCard {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .projects .project-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 10px 30px rgba(0, 188, 212, 0.3);
+    }
+
+    a {
+      color: #6a0dad;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #00bcd4;
+      text-decoration: underline;
+    }
+
+    /* AI Feature - Interactive Scroll */
+    .container:hover {
+      background: linear-gradient(45deg, #d1e7f0, #f4f6fc);
+      transform: scale(1.02);
+      transition: background 1s, transform 1s;
+    }
+
+    /* Media Query for Responsive Layout */
+    @media (max-width: 768px) {
+      .container {
+        width: 95%;
+      }
+
+      .skill-list {
+        flex-direction: column;
+      }
+
+      .skills, .projects {
+        margin-top: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>About Me</h1>
+    <p>
+      My name is <strong>Roshani Sonawane</strong>, and I am a first-year Computer Engineering student. Passionate about technology, I love working on projects and learning through hands-on experience. My goal is to maximize my potential and contribute positively to the field of Computer Engineering.
+    </p>
+
+    <div class="details">
+      <p><span class="highlight">Birthday:</span> 02 May 2006</p>
+      <p><span class="highlight">Age:</span> 18</p>
+      <p><span class="highlight">Website:</span> <a href="#">www.roshani-portfolio.com</a></p>
+      <p><span class="highlight">Degree:</span> B.Tech (Pursuing)</p>
+      <p><span class="highlight">Phone:</span> +91 9096820986</p>
+      <p><span class="highlight">Email:</span> roshani.sonawane@mitaoe.ac.in</p>
+      <p><span class="highlight">City:</span> Pune, India</p>
+    </div>
+
+    <div class="skills">
+      <h2>Skills</h2>
+      <div class="skill-list">
+        <div class="skill-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/919/919827.png" alt="HTML" />
+          <p>HTML</p>
+        </div>
+        <div class="skill-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/919/919826.png" alt="CSS" />
+          <p>CSS</p>
+        </div>
+        <div class="skill-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python" />
+          <p>Python</p>
+        </div>
+        <div class="skill-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="C" />
+          <p>C</p>
+        </div>
+        <div class="skill-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/KiCad-Logo.svg" alt="KiCad" />
+          <p>KiCad</p>
+        </div>
+        <div class="skill-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Arduino_Logo.svg" alt="Arduino" />
+          <p>Arduino</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="projects">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>Automatic Power Cutoff Circuit</h3>
+        <p>Designed an automatic power cutoff circuit using IC555 for better energy efficiency.</p>
+      </div>
+      <div class="project-card">
+        <h3>PCB Design & Fabrication</h3>
+        <p>Worked on designing and fabricating a custom PCB using KiCad and hands-on soldering techniques.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

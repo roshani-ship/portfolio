@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roshani Sonawane | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="newstyle.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .sidebar {
+      width: 250px;
+      background-color: #333;
+      color: #fff;
+      position: fixed;
+      height: 100%;
+      padding-top: 30px;
+      text-align: center;
+    }
+
+    .profile img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin-bottom: 10px;
+    }
+
+    .profile h3 {
+      margin: 10px 0 5px;
+      font-size: 22px;
+    }
+
+    .profile p {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    nav {
+      margin-top: 30px;
+    }
+
+    nav a {
+      display: block;
+      padding: 10px 20px;
+      color: #fff;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      background-color: #444;
+    }
+
+    .home {
+      margin-left: 270px;
+      padding: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .content {
+      max-width: 50%;
+    }
+
+    .content h2 {
+      font-size: 36px;
+    }
+
+    .content h4 {
+      font-size: 20px;
+      color: #666;
+    }
+
+    .content p {
+      margin: 20px 0;
+      max-width: 600px;
+    }
+
+    .btn-group a {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-right: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .social-icons a {
+      margin: 0 8px;
+      color: #333;
+      font-size: 20px;
+    }
+
+    .image-container {
+      max-width: 45%;
+      text-align: center;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .achievements {
+      margin-left: 270px;
+      padding: 40px;
+    }
+
+    .section-title {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .achievement-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .achievement-box {
+      flex: 1 1 200px;
+      padding: 20px;
+      border-radius: 10px;
+      color: #fff;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .home {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .content,
+      .image-container {
+        max-width: 100%;
+      }
+
+      .image-container {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Sidebar with profile image and name -->
+  <div class="sidebar">
+    <div class="profile">
+      <img src="photo1.jpg" alt="Roshani Sonawane" />
+      <h3>Roshani Sonawane</h3>
+      <p>Computer Engineering Student</p>
+    </div>
+    <nav>
+      <a href="index.html"><i class="fa fa-home"></i> Home</a>
+      <a href="about6.html"><i class="fa fa-user"></i> About</a>
+      <a href="projects1.html"><i class="fa fa-folder"></i> Projects</a>
+      <a href="achievement30.html" class="active"><i class="fa fa-trophy"></i> Achievements</a>
+      <a href="contact5.html"><i class="fa fa-envelope"></i> Contact</a>
+    </nav>
+  </div>
+
+  <!-- Main content -->
+  <section class="home">
+    <div class="content">
+      <h2>Hi, I'm <br /><span>Roshani Sonawane</span></h2>
+      <h4>Engineering Student | Developer</h4>
+      <p>
+        I am a Computer Engineering student with a passion for software development and innovative technology.
+        I thrive on solving real-world problems through coding, circuit design, and creative solutions.
+      </p>
+      <div class="btn-group">
+        <a href="#">Hire Me</a>
+        <a href="project10.html">See Projects</a>
+      </div>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/roshani-sonawane" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+
+    <!-- 3D Stylish Portfolio Image inserted -->
+    <div class="image-container">
+      <img src="0175acac-f268-47e8-b72a-05260f73a4b9.jpg" alt="3D portfolio design" />
+    </div>
+  </section>
+
+</body>
+
+</html>

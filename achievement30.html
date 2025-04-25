@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Achievements | Roshani Sonawane</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4faff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 40px;
+      font-size: 32px;
+    }
+
+    .achievements {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .achievement-card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.8s ease forwards;
+    }
+
+    .achievement-card:nth-child(1) {
+      animation-delay: 0.2s;
+    }
+
+    .achievement-card:nth-child(2) {
+      animation-delay: 0.4s;
+    }
+
+    .achievement-card:nth-child(3) {
+      animation-delay: 0.6s;
+    }
+
+    .achievement-card:nth-child(4) {
+      animation-delay: 0.8s;
+    }
+
+    .achievement-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 30px rgba(0, 123, 255, 0.3);
+    }
+
+    .achievement-title {
+      font-size: 20px;
+      font-weight: 600;
+      color: #007bff;
+      margin-bottom: 8px;
+      transition: color 0.3s;
+    }
+
+    .achievement-title:hover {
+      color: #0056b3;
+    }
+
+    .achievement-date {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 10px;
+    }
+
+    .achievement-desc {
+      color: #444;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 15px;
+      }
+
+      header {
+        padding: 20px;
+      }
+
+      h2 {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Roshani Sonawane</h1>
+    <p>My Achievements</p>
+  </header>
+
+  <div class="container">
+    <h2>Achievements & Recognitions</h2>
+    <div class="achievements">
+      <div class="achievement-card">
+        <div class="achievement-title">Best Student of the Year</div>
+        <div class="achievement-date">2023</div>
+        <div class="achievement-desc">
+          Awarded for academic excellence and overall performance in final year of graduation.
+        </div>
+      </div>
+
+      <div class="achievement-card">
+        <div class="achievement-title">Hackathon Winner</div>
+        <div class="achievement-date">2022</div>
+        <div class="achievement-desc">
+          Secured 1st position in inter-college hackathon for creating a real-time pollution tracking app.
+        </div>
+      </div>
+
+      <div class="achievement-card">
+        <div class="achievement-title">Google Cloud Certification</div>
+        <div class="achievement-date">2021</div>
+        <div class="achievement-desc">
+          Completed Google Cloud Foundations and Data Engineering training with certification.
+        </div>
+      </div>
+
+      <div class="achievement-card">
+        <div class="achievement-title">Internship at Infosys</div>
+        <div class="achievement-date">2023</div>
+        <div class="achievement-desc">
+          Completed a 2-month internship in web development and contributed to internal tools.
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects | Roshani Sonawane</title>
+  <meta name="description" content="Explore featured projects of Roshani Sonawane with an AI-powered chat feature and a modern, attractive design.">
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #74ebd5, #acb6e5);
+      margin: 0;
+      padding: 0;
+      color: #2c3e50;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: #1a1a2e;
+      color: #fff;
+      padding: 25px 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      animation: slideIn 1s ease-out;
+    }
+    header h1, header p {
+      margin: 0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #1a1a2e;
+      margin-bottom: 40px;
+      font-size: 28px;
+      animation: fadeIn 2s ease-out;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+      gap: 25px;
+      animation: fadeInUp 2s ease-out;
+    }
+
+    .project-card {
+      background: #ffffffc7;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s, box-shadow 0.3s;
+      backdrop-filter: blur(8px);
+      opacity: 0;
+      animation: fadeInUp 1.5s forwards;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .project-image img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .project-content {
+      padding: 18px;
+    }
+
+    .project-title {
+      font-size: 20px;
+      font-weight: bold;
+      color: #1a1a2e;
+    }
+
+    .project-desc {
+      margin-top: 10px;
+      color: #34495e;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .project-link {
+      display: inline-block;
+      margin-top: 15px;
+      font-size: 15px;
+      color: #f67280;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .project-link:hover {
+      color: #c06c84;
+      text-decoration: underline;
+    }
+
+    /* AI Chat Widget Styling */
+    .chat-widget {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 300px;
+      max-height: 400px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      font-size: 14px;
+      animation: slideInRight 1s ease-out;
+    }
+
+    .chat-header {
+      background: #1a1a2e;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .chat-body {
+      flex-grow: 1;
+      padding: 10px;
+      overflow-y: auto;
+      background: #f5f5f5;
+    }
+
+    .chat-input {
+      border-top: 1px solid #ddd;
+      display: flex;
+    }
+
+    .chat-input input {
+      flex-grow: 1;
+      border: none;
+      padding: 10px;
+      outline: none;
+      font-size: 14px;
+    }
+
+    .chat-input button {
+      background: #f67280;
+      border: none;
+      color: #fff;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .chat-input button:hover {
+      background: #c06c84;
+    }
+
+    /* Chat toggle button */
+    .chat-toggle {
+      position: fixed;
+      bottom: 20px;
+      right: 340px;
+      background: #f67280;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: background 0.3s;
+    }
+
+    .chat-toggle:hover {
+      background: #c06c84;
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slideInRight {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Roshani Sonawane</h1>
+    <p>My Projects</p>
+  </header>
+
+  <div class="container" role="main">
+    <h2>Featured Projects</h2>
+    <div class="projects">
+
+      <div class="project-card">
+        <div class="project-image">
+          <img src="image1.jpg" alt="Portfolio Website Screenshot" loading="lazy" />
+        </div>
+        <div class="project-content">
+          <div class="project-title">Portfolio Website</div>
+          <div class="project-desc">A personal portfolio website showcasing skills, resume, and contact info using HTML, CSS, and JavaScript.</div>
+          <a class="project-link" href="#">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">
+          <img src="image2.jpg" alt="Weather App Screenshot" loading="lazy" />
+        </div>
+        <div class="project-content">
+          <div class="project-title">Weather App</div>
+          <div class="project-desc">A web app displaying real-time weather using OpenWeatherMap API, built with JavaScript and Bootstrap styling.</div>
+          <a class="project-link" href="#">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">
+          <img src="image3.jpg" alt="E-commerce Landing Page Screenshot" loading="lazy" />
+        </div>
+        <div class="project-content">
+          <div class="project-title">E-commerce Landing Page</div>
+          <div class="project-desc">A responsive e-commerce front page with product sections, banner carousel, and CTA buttons, using HTML/CSS.</div>
+          <a class="project-link" href="#">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">
+          <img src="image4.jpg" alt="To-Do List App Screenshot" loading="lazy" />
+        </div>
+        <div class="project-content">
+          <div class="project-title">To-Do List App</div>
+          <div class="project-desc">A simple interactive to-do list application allowing users to manage tasks with JavaScript and local storage.</div>
+          <a class="project-link" href="#">View Project</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Chat Toggle Button -->
+  <button class="chat-toggle" id="chatToggle">Chat with AI</button>
+
+  <!-- AI Chat Widget -->
+  <div class="chat-widget" id="chatWidget" style="display: none;">
+    <div class="chat-header">AI Assistant</div>
+    <div class="chat-body" id="chatBody">
+      <p>Hi there! How can I help you today?</p>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="userInput" placeholder="Type your message..." />
+      <button>Send</button>
+    </div>
+  </div>
+
+</body>
+</html>

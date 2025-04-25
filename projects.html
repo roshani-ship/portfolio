@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Roshani Sonawane</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f3f4f6;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #6c63ff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .project-card {
+      background-color: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+    .project-image img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .project-content {
+      padding: 15px;
+    }
+    .project-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #6c63ff;
+    }
+    .project-desc {
+      margin-top: 8px;
+      color: #444;
+      font-size: 14px;
+    }
+    .project-link {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 14px;
+      color: #6c63ff;
+      text-decoration: none;
+    }
+    .project-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Roshani Sonawane</h1>
+    <p>My Projects</p>
+  </header>
+
+  <div class="container">
+    <h2>Featured Projects</h2>
+    <div class="projects">
+
+      <div class="project-card">
+        <div class="project-image">
+          <img src="images/project1.jpg" alt="Project 1">
+        </div>
+        <div class="project-content">
+          <div class="project-title">Portfolio Website</div>
+          <div class="project-desc">A personal portfolio website to showcase my skills, resume, and contact information using HTML, CSS, and JavaScript.</div>
+          <a class="project-link" href="#">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">
+          <img src="project2.jpg" alt="Project 2">
+        </div>
+        <div class="project-content">
+          <div class="project-title">Weather App</div>
+          <div class="project-desc">A web app that displays real-time weather using OpenWeatherMap API. Built with JavaScript and styled with Bootstrap.</div>
+          <a class="project-link" href="#">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">
+          <img src="project3.jpg" alt="Project 3">
+        </div>
+        <div class="project-content">
+          <div class="project-title">E-commerce Landing Page</div>
+          <div class="project-desc">Designed a responsive e-commerce front page with product sections, banner carousel, and CTA buttons using HTML/CSS.</div>
+          <a class="project-link" href="#">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">
+          <img src="images/project4.jpg" alt="Project 4">
+        </div>
+        <div class="project-content">
+          <div class="project-title">To-Do List App</div>
+          <div class="project-desc">A simple and interactive to-do list application that allows users to manage tasks using JavaScript and local storage.</div>
+          <a class="project-link" href="#">View Project</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
